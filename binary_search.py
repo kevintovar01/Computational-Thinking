@@ -1,6 +1,3 @@
-
-
-
 def binary_search(objective):
     epsilon = 0.01 #14
 
