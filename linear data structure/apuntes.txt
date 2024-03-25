@@ -1,0 +1,284 @@
+Que es una estructura de datos?
+
+-Representacion interna de una coleccion de informacion.
+
+
+**Tipos de colecciones
+
+Nos referimos a las estructuras de datos.
+ Una colección es un grupo de cero o más 
+ elementos que pueden tratarse como una
+  unidad conceptual.
+
+Tipos de datos.
+
+Non-zeo Value
+Cero
+null
+undefined
+
+Estos tipos de dato también pueden formar 
+parte de una colección. Existen colecciones 
+de tipo Dinámicas que son aquelas que pueden 
+variar su tamaño y las Inmutables que no
+cambian su tamaño.
+
+**Estructuras Lineales
+
+Estas estan ordenadas por su indice, ademas 
+todas tienen un predecesor expto la primera o
+la ultima. En caso de que sea una estructura 
+lineal dinamica esta puede crecer y el 
+ultimo elemento pude tener sucesores pero 
+el primer elemento no va a tener predecesores.
+
+ejem de estructuras de datos o colecciones lineales
+
+-->fila en el supermercado
+-Donde se tiene n numero de personas que forman 
+parte de esa fila y van siendo atendidas o llegan
+mas para ser atendidos en la fila
+
+-->pila de datos
+-aca es en donde tomamos platos del tope o 
+estamos anadiendo al tope, pero nunca estamos a;adiendo 
+de forma intermedio
+
+-->checklist
+- si estas estan ordenadas y si tienen una dependencia,
+pues se van a ir atendiendo de forma lineal.
+
+**Jerarquicas
+
+--> Estas tienen una forma de un arbol invertido donde,
+en vez de tener el tronco el la parte del piso o la base se
+tiene al reves y las ramas se van abriendo hacia abajo. 
+
+Aqui el elemento no tiene predecesores pero si tiene susesores
+a los que llamamos hijos y estos susesores a los predecesores se
+les llama padres.
+
+- Un arbol puede de tener n numero de niveles, es decir, n numero 
+de niveles de hijos hacia abajo.
+
+
+ejemplos:
+
+-Sistema de directorios
+-en mi computadora tengo un folder en donde puedo 
+a;adir archivos y mas directorios, en esos directorio
+a;adir mas y mas.
+
+-indices de libros 
+- un libro es una unidad conceptual y esta la dividimos en
+capitulos y los capitulos los dividimos en temas y los 
+temas en subtemas, de esta forma los capitulos son hijos
+del libro, los temas son hijos de los capitulos y los 
+subtemas son hijos de los temas.  
+
+
+**Grafos
+
+-donde los elementos pueden tener varios predecesores y sucesores.
+Pero como estos no tienen una estructura Jerarquica se les llama
+'vecinos', entonces un elemento puede tener n numero de vecinos
+o ningun vecino. 
+
+un ejemplo seria las Rutas de los vuelos aeros, donde un destino
+puede estar conectado a mas destinos o a ninguno.
+
+**desordenadas
+
+-estas No tienen un orden en particular no hay sucesores ni
+predecesores simplemente los elementos estan hay.
+
+en ejemplo una bolsa de canicas en donde no sabemos el 
+orden y no sabemos como van a salir.
+
+**Ordenadas 
+--> estas pueden estar basadas en cualquiera de los
+tipos de colecciones anteriores y general mente tiene una 
+regla de orden, una de las mas comunes es que un elemento 
+cuyo valor su sucesor va a ser un elemento igual mas 1 o 
+lo que sea que le de un orden.
+
+un ejemplo seria un catalogo de pinturas que tiene un 
+codigo y segun el codigo va hacer el orden donde se 
+ubique en la escala cromatica. 
+
+**Operaciones esenciales en colecciones
+
+-- algunas de estas opeeraciones es para conocer
+su tama;o, para saber la pertenencia de un elemento, 
+recorrer una dicha coleccion, convertirlo o representarlo
+en string y tambien saber si esas colecciones es igual a 
+otra collecion o si son diferentes.
+
+concatenacion: por ejemplo cuando unimos o sumamos listas y
+diccionarios.
+
+conversion de tipo: podemos convertir de un tipo de dato a otro.
+
+insertar: tambien podemos insertar elementos ya sea al principio
+al final o en una posicion dada.
+
+remover: podemos quitar elementos ya sea al principio o al final.
+
+reemplazar: podemos remplazar un elemento, es decir, eliminarlo 
+y a;adir uno nuevo en esa posicion en especifica.
+
+acceder: podemos acceder a uno o a varios elementos de dicha collecion.
+
+
+**Colecciones incorporadas en python
+
+--> Listas
+--> tuplas
+--> conjuntos/ set
+-almacenan objetos no-duplicados 
+-de acceso rapido
+-aceptan operaciones logicas
+-son desordenados
+--> diccionarios 
+
+
+**Array 
+
+Un array va a tener informacion y va hacer representado
+de una forma particular asi como tambien va a tener unas 
+caracteristicas propias. 
+
+Cuando hablamos de los array debemos tener dos conceptos
+claros hacerca de esto:
+
+-- Elemento: Es el valor que se almacena en las posiciones
+del array
+
+-- indice: hace referencia a la posicion del elemento.
+
+la importancia de los arrays lo que hacen es que van a guardar
+informacion de forma concecutiva y tiene ciertas restricciones.
+ 
+las restricciones de los arrays son:
+
+- no pueden agregar posiciones
+- no pueden remover posiciones
+- no pueden modificar su tamaño
+
+esto se define en el momento de crear un array
+
+Donde se utiliza?
+
+Los arrays se usan en los sprites de los videojuegos, 
+o en un menú de opciones. Son opciones definidas.
+
+Modulo 'array'
+
+-solo almacena numeros y caracteres
+-basado en listas
+
+
+**Nodos y singly lined list
+
+*Linked structures
+
+-- Consiste de nodos conectados a otros
+--Los mas comunes son sencillos o dobles
+--No se accede por indice, sino por recorrido
+
+
+**conceptos a tener en cuenta
+
+data: valor almacenado en Nodos
+Next: referencia al siguiente nodo
+previous: referencia al nodo anteriores
+head: referencia al primer nodo.
+Tail: referencia al ultimo nodo.
+
+¿Cómo funciona en memoria los Linked Estructures?
+
+Estas estructuras de datos hablan de nodos/datos repartidos 
+en memoria, diferentes a los arrays que son contiguos. Los 
+nodos se conectan a diferentes espacios en memoria, podemos 
+acceder a los datos saltando en memoria, siendo mucho más ágil. 
+Los nodos nos sirven para crear otras estructuras más complejas, 
+como Stacks, Queues, las llamadas pilas y colas. Es posible 
+optimizar partes del código usando nodos.
+
+donde lo podemos implementar o para que sirver 
+
+los nodos en particular nos sirven para crear una estructura
+de datos mas complejas como los stack o Queues, los conocidos
+pilas y colas, ademas podemos optimizar partes de nuestro 
+codigo implementando nodos.
+
+Double Linked Structure.
+Estos hacen que el nodo haga referencia al siguiente nodo y 
+al anterior, es decir nos va a permitir ir en ambas direcciones. 
+También nos permitirá realizar “formas” y contextos circulares.
+
+El ejemplo clave aquí será función de ctrl+z y ctrl+y Estas 
+opciones nos permiten hacer y deshacer un proceso en Windows.
+
+El historial del navegador también es un buen ejemplo al 
+permitirnos navegar entre el pasado y el presente.
+
+
+Resumen:
+■■■■■■■
+
+Crear Nodos.
+Cada nodo almacenará un valor y cada nodo tiene un puntero 
+que llevará a otro nodo con otro valor y así obtener los datos 
+allí almacenados.
+
+Es muy útil al tener infromación dispersa en memoria y 
+cuando queremos que sean consultas ágiles, es importante entender 
+que los nodos son la base para implementaciones más elaboradas de 
+estructuras de datos, Stacks, Qeues, Deque, Doubly, Singly List, 
+Circular list, Graphs .
+
+Cada estructura de datos servirá para un propósito dentro de un 
+contexto, por ejemplo los grafos acíclicos, donde se usan para 
+sistemas de recomendaciones al mostrar las relaciones entre 
+objetos o representar los tipos de redes que se forman entre 
+nodos. Para crear un nodo:
+
+Creamos una clase Node
+Referimos valores mediante argumentos de instancias.
+Unimos los nodos iterando entre referencias.
+Este script tiene como propósito crear nodos.
+
+Constructor:
+
+data= El dato del nodo.
+next= está por defecto en None, porque en una serie de nodos 
+el +ultimo te lleva a ninguna parte
+
+
+
+**Que son stacks
+
+-collecion lineal
+-basados en arrays o linked list
+-El principio fundamental de los stacks es
+LIFO, es decir, que el Ultimo elemento en entrar
+sera el primero en salir.
+- A;adir: push
+-remover: pop
+-top
+-bottom
+
+
+
+**Queues
+
+conceptos importantes
+FIFO: first-in, First-Out.
+Rear: Ultimo elemento
+Front: primer elemento
+
+
+priority Queues
+se basa en FIFO con elementos de 
+mayor/menor prioridad
